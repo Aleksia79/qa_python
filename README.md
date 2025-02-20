@@ -4,8 +4,15 @@
 ## Требования
 - Для запуска тестов должен быть установлен пакет pytest
 - Запуск всех тестов выполянется командой pytest
+- тестовые данные в файле data.py
+- фикстура для создания объекта класса в conftest.py
 
 ## Список тестов
+
+### test_add_new_book_add_two_books
+- тест на добавление двух книг
+- проверка метода add_new_book
+- проверка метода get_books_genre
 
 ### test_positive_add_new_book_number_of_symbols_true
 - позитивный тест на добавление названий книг разрешенной длины
@@ -22,7 +29,6 @@
 
 ### test_negative_add_new_book_existing_books_true
 - негативная проверка на добавление существующих книг
-- используется фикстура list_of_books
 - проверка метода add_new_book
 - проверка метода get_books_genre
 - проверка метода __init__ (словарь books_genre)
@@ -47,14 +53,12 @@
 
 ### test_get_book_genre_true
 - проверка жанра книги по ее имени
-- используется фикстура list_of_books_with_genre
 - используется параметризация с двумя тестовыми данными
 - проверка метода get_book_genre
 - проверка метода __init__ (словарь books_genre)
 
 ### test_get_books_with_specific_genre_true
 - проверка получения списка книг с определенным жанром
-- используются фикстуры list_of_genre_books и list_of_books_with_genre
 - используется параметризация с двумя тестовыми данными
 - проверка метода get_books_with_specific_genre
 
@@ -75,7 +79,6 @@
 
 ### test_negative_add_book_in_favorites_true
 - негативная проверка добавления книги в Избранное, если она там уже есть
-- используется фикстура list_of_favorites
 - используется параметризация с двумя тестовыми данными
 - проверка метода add_new_book
 - проверка метода add_book_in_favorites
@@ -83,7 +86,6 @@
 
 ### test_delete_book_from_favorites_true
 - позитивная проверка удаления книги из Избранного
-- используется фикстура list_of_favorites
 - используется параметризация с двумя тестовыми данными
 - проверка метода delete_book_from_favorites
 - проверка метода get_list_of_favorites_books
