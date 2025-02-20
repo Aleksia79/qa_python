@@ -57,11 +57,11 @@ class BooksCollector:
         return self.favorites
 
 
-collector = BooksCollector()
-collector.add_new_book('Гордость и предубеждение и зомби')
-collector.set_book_genre('Гордость и предубеждение и зомби', 'Ужасы')
-collector.add_new_book('Что делать, если ваш кот хочет вас убить')
-collector.set_book_genre('Что делать, если ваш кот хочет вас убить', 'Комедии')
+# collector = BooksCollector()
+# collector.add_new_book('Гордость и предубеждение и зомби')
+# collector.set_book_genre('Гордость и предубеждение и зомби', 'Ужасы')
+# collector.add_new_book('Что делать, если ваш кот хочет вас убить')
+# collector.set_book_genre('Что делать, если ваш кот хочет вас убить', 'Комедии')
 
 #print(collector.get_books_genre())
 #collector.add_book_in_favorites('Гордость и предубеждение и зомби')
@@ -71,4 +71,4 @@ collector.set_book_genre('Что делать, если ваш кот хочет
 
 #collector.books_genre = {'Гордость и предубеждение и зомби': 'Ужасы', 'Что делать, если ваш кот хочет вас убить': 'Комедия'}
 
-print(collector.get_books_with_specific_genre('Комедии'))
+# print(collector.get_books_with_specific_genre('Комедии'))
